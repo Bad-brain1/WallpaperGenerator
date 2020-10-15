@@ -1,0 +1,21 @@
+.general{
+    display: grid;
+    height: 100vh;
+    
+    
+}
+.contener{
+    display: grid;
+    gap: 10px;
+}
+.header{
+    background-color: red ;
+}
+.filter{
+    
+    background-color: seagreen;
+}
+.content{
+    background-color: rgb(92, 81, 81);
+    
+}
