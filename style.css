@@ -1,21 +1,36 @@
-.general{
+.body{
     display: grid;
     height: 100vh;
-    
-    
 }
-.contener{
+.container{
     display: grid;
-    gap: 10px;
+    grid-template-rows: 60px 55px auto 100px;
+    
 }
 .header{
-    background-color: red ;
+    background-color: #232a34;
+    padding: 10px;
+    position: sticky;
+    top:0;
+    box-shadow: inset 0 0 0 1px rgba(31,31,31,.66), 0 0 10px rgba(0,0,0,.75), 0 0 10px rgba(0,0,0,.75);
 }
 .filter{
-    
-    background-color: seagreen;
+    background-color: #232a34;
+    padding: 10px;
+   
 }
 .content{
-    background-color: rgb(92, 81, 81);
-    
+    background-color: #e8eaec;
+}
+.content__img{
+    margin: 10px 20px;
+}
+.img-box{
+    max-width: 250px;
+    height: 200px;
+    margin: 5px;
+    background-color: gray;    
+}
+.footer{
+    background-color:#232a34;
 }
