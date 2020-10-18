@@ -1,11 +1,11 @@
 .body{
     display: grid;
     height: 100vh;
+    font-size: 15px;
 }
 .container{
     display: grid;
-    grid-template-rows: 60px 55px auto 100px;
-    
+    grid-template-rows: 60px 60px auto 100px;
 }
 .header{
     background-color: #232a34;
@@ -14,22 +14,56 @@
     top:0;
     box-shadow: inset 0 0 0 1px rgba(31,31,31,.66), 0 0 10px rgba(0,0,0,.75), 0 0 10px rgba(0,0,0,.75);
 }
-.filter{
+
+/* фильтр */
+.searchbar{
+    display: flex;
     background-color: #232a34;
-    padding: 10px;
-   
+    padding: 4px 0 4px ;
+    align-items: center;
+    color: rgb(97, 97, 97);
+    justify-content: center;
 }
+.search__category{
+    padding: 3px;
+    background-color: rgba(10, 10, 10, 0.1);
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,.4), 1px 1px 0 rgba(127,127,127,.1);
+    margin: 0 0.25em;
+}
+.checkbox{
+    width: 0;
+    height: 0;
+}
+.checkbox-label{
+    display: inline-block;
+    text-align: center;
+    min-width: 5em;
+    padding: .5em;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color:rgba(20, 18, 18, 0.2);
+    text-shadow: 2px 2px 3px rgba(2, 1, 1, 0.75);
+}
+.checkbox:checked+label{
+    color: #FFF;
+    background-color: rgb(101, 126, 87);
+}
+
+/* контент */
 .content{
     background-color: #e8eaec;
+    display: grid;
+
 }
-.content__img{
+.content__photos{
     margin: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100vh;
+    gap:3px;
 }
-.img-box{
-    max-width: 250px;
-    height: 200px;
-    margin: 5px;
-    background-color: gray;    
+.photos__column{
+    background-color: rgb(100, 100, 95);
 }
 .footer{
     background-color:#232a34;
