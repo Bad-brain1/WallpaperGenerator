@@ -9,25 +9,30 @@
 </head>
 <body class="body">
     <div class="container">
-        <div class="header" style="color: white;"> *логотип*  при уменьшение экрана появится кнопка для вызова фильтрации </div>
-        <form class="searchbar"> 
-            <div class="search__category">
-                <input type="checkbox" class="checkbox" name="general" value="general" id="search-general" checked>
-                <label for="search-general" class="checkbox-label"> General</label>
-                <input type="checkbox" class="checkbox" name="anime" value="anime" id="search-anime" checked>
-                <label for="search-anime" class="checkbox-label"> Anime</label>
-                <input type="checkbox" class="checkbox" name="people" value="people" id="search-people" checked>
-                <label for="search-people" class="checkbox-label"> People</label>
-            </div>
-            <div class="search__category">
-                <input type="checkbox" class="checkbox" name="swf" value="swf" id="search-swf" checked>
-                <label for="search-swf" class="checkbox-label"> SWF</label>
-                <input type="checkbox" class="checkbox" name="sketchy" value="anime" id="search-sketchy" checked>
-                <label for="search-sketchy" class="checkbox-label"> Sketchy</label>
-            </div>
-        </form>
+        <div class="header"> 
+            <img class="Header__logo" src="logo.png" alt="логотип">  
+            <h1>HD Wallpapers</h1>
+        </div>
+
         <div class="content">
-            <h1>HD Обои</h1>
+            <form class="content__searchbar"> 
+        		<span class="searchbar-text">Filter</span>
+	            <div class="searchbar-category">
+	                <input type="checkbox" class="checkbox" name="general" value="general" id="search-general" checked>
+	                <label for="search-general" class="checkbox-label"> General</label>
+	                <input type="checkbox" class="checkbox" name="anime" value="anime" id="search-anime" checked>
+	                <label for="search-anime" class="checkbox-label"> Anime</label>
+	                <input type="checkbox" class="checkbox" name="people" value="people" id="search-people" checked>
+	                <label for="search-people" class="checkbox-label"> People</label>
+	            </div>
+	            <div class="searchbar-category">
+	                <input type="checkbox" class="checkbox" name="swf" value="swf" id="search-swf" checked>
+	                <label for="search-swf" class="checkbox-label"> SWF</label>
+	                <input type="checkbox" class="checkbox" name="sketchy" value="anime" id="search-sketchy" checked>
+	                <label for="search-sketchy" class="checkbox-label"> Sketchy</label>
+	            </div>
+            </form>
+            
             <div class="content__photos">    
                 <div class="photos__column">здесь должны быть 
                     блоки в фотографиями. При уменьшения экрана колонки уменьшаются с 3 до 2 до 1
@@ -39,7 +44,9 @@
                     блоки в фотографиями. При уменьшения экрана колонки уменьшаются с 3 до 2 до 1
                 </div>
             </div>
+
         </div>
+
         <div class="footer">футер </div>
     </div>
 </body>
