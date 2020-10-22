@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallpapers</title>
+    <title>Free HD Wallpapers</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body class="body">
     <div class="container">
         <div class="header"> 
-            <img class="Header__logo" src="logo.png" alt="логотип">  
+            <img class="Header__logo" src="/img/logo.png" alt="логотип">  
             <h1>HD Wallpapers</h1>
         </div>
 
         <div class="content">
             <form class="content__searchbar"> 
-        		<span class="searchbar-text">Filter</span>
-	            <div class="searchbar-category">
+        		<h3 class="searchbar-text">Filter</h3>
+	            <div class="searchbar__category">
 	                <input type="checkbox" class="checkbox" name="general" value="general" id="search-general" checked>
 	                <label for="search-general" class="checkbox-label"> General</label>
 	                <input type="checkbox" class="checkbox" name="anime" value="anime" id="search-anime" checked>
@@ -25,29 +26,62 @@
 	                <input type="checkbox" class="checkbox" name="people" value="people" id="search-people" checked>
 	                <label for="search-people" class="checkbox-label"> People</label>
 	            </div>
-	            <div class="searchbar-category">
+	            <div class="searchbar__category">
 	                <input type="checkbox" class="checkbox" name="swf" value="swf" id="search-swf" checked>
 	                <label for="search-swf" class="checkbox-label"> SWF</label>
 	                <input type="checkbox" class="checkbox" name="sketchy" value="anime" id="search-sketchy" checked>
 	                <label for="search-sketchy" class="checkbox-label"> Sketchy</label>
-	            </div>
+                </div>
+                <div class="searchbar__category">
+                    <label for="resolution" class="resolution-text"> resolution</label>
+                    <select class="category__resolution" name="resolution" id="">
+                        <option class="resolution-item" value=""> ALL </option>
+                        <option class="resolution-item" value=""> HD </option>
+                        <option class="resolution-item" value=""> FullHD </option>
+                        <option class="resolution-item" value=""> 4K </option>
+                    </select>
+                </div>
+                <div class="searchbar__category">
+                    <button class="searchbar-button" type="button" > search </button>
+                </div>
             </form>
             
             <div class="content__photos">    
-                <div class="photos__column">здесь должны быть 
-                    блоки в фотографиями. При уменьшения экрана колонки уменьшаются с 3 до 2 до 1
+                <div class="photos__column">
+                    <div class="column__item">
+                        <a href=""> 
+                            <img class="item-img" src="img/test.png" alt="testimg" width="auto" height="250">
+                        </a>
+                    </div>
                 </div> 
-                <div class="photos__column">здесь должны быть 
-                    блоки в фотографиями. При уменьшения экрана колонки уменьшаются с 3 до 2 до 1
+                <div class="photos__column">
+                    <div class="photos__column">
+                        <div class="column__item">
+                            <a href=""> 
+                                <img class="item-img" src="img/test.png" alt="testimg" width="auto" height="250">
+                            </a>
+                        </div>
+                    </div> 
                 </div>
-                <div class="photos__column">здесь должны быть 
-                    блоки в фотографиями. При уменьшения экрана колонки уменьшаются с 3 до 2 до 1
+                <div class="photos__column">
+                    <div class="column__item">
+                        <a href=""> 
+                            <img class="item-img" src="img/test.png" alt="testimg" width="auto" height="250">
+                        </a>
+                    </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="footer">футер </div>
+        <div class="footer">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Quam quae accusantium debitis veniam amet praesentium similique, 
+        iure maxime placeat, modi illo, ex earum dolor quis beatae hic natus? 
+        Optio dolores ab aliquid est odit consequuntur sed eveniet inventore 
+        similique! Soluta praesentium recusandae numquam consequuntur non debitis 
+        illum, nihil sapiente. Fugiat labore at numquam nam, natus quod nemo nostrum 
+        </div>
     </div>
 </body>
 </html>
