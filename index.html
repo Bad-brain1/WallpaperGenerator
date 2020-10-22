@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free HD Wallpapers</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body class="body">
     <div class="container">
         <div class="header"> 
-            <img class="Header__logo" src="/img/logo.png" alt="логотип">  
+            <img class="Header__logo" src="/img/logo.png" alt="logo" width="150" height="65">  
             <h1>HD Wallpapers</h1>
         </div>
 
@@ -32,7 +32,8 @@
 	                <input type="checkbox" class="checkbox" name="sketchy" value="anime" id="search-sketchy" checked>
 	                <label for="search-sketchy" class="checkbox-label"> Sketchy</label>
                 </div>
-                <div class="searchbar__category">
+                <!-- возможно нужно поменять -->
+                <div class="searchbar__category">   
                     <label for="resolution" class="resolution-text"> resolution</label>
                     <select class="category__resolution" name="resolution" id="">
                         <option class="resolution-item" value=""> ALL </option>
@@ -49,7 +50,9 @@
             <div class="content__photos">    
                 <div class="photos__column">
                     <div class="column__item">
-                        <a href=""> 
+                        <a href="/pages/page1.html"> 
+                            <img class="item-img" src="img/test.png" alt="testimg" width="auto" height="250">
+                            <img class="item-img" src="img/test.png" alt="testimg" width="auto" height="250">
                             <img class="item-img" src="img/test.png" alt="testimg" width="auto" height="250">
                         </a>
                     </div>
@@ -57,15 +60,15 @@
                 <div class="photos__column">
                     <div class="photos__column">
                         <div class="column__item">
-                            <a href=""> 
-                                <img class="item-img" src="img/test.png" alt="testimg" width="auto" height="250">
+                            <a href="/pages/page1.html"> 
+                                <img class="item-img" src="img/test1.jpg" alt="testimg" width="auto" height="250">
                             </a>
                         </div>
                     </div> 
                 </div>
                 <div class="photos__column">
                     <div class="column__item">
-                        <a href=""> 
+                        <a href="/pages/page1.html"> 
                             <img class="item-img" src="img/test.png" alt="testimg" width="auto" height="250">
                         </a>
                     </div>

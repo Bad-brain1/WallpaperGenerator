@@ -7,8 +7,9 @@
 }
 .container{
     display: grid;
-    grid-template-rows: 75px auto auto;
+    grid-template-rows: 75px auto 200px;
 }
+/*  */
 .header{
     display: flex;
     color:#fff;
@@ -20,6 +21,9 @@
 }
 .Header__logo{
     margin: -5px;
+    margin-right: 8px;
+    max-width: 100%;
+    height: auto;
 }
 
 /* фильтр */
@@ -84,8 +88,8 @@
 .searchbar-button{
     min-width: 6em;
     height: 2em;
-
 }
+
 /* контент */
 .content{
     background-color: #e8eaec;
@@ -96,13 +100,14 @@
     margin: 10px 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100vh;
+    grid-template-rows: auto;
     gap:10px;
 }
 .photos__column{
     /* background-color: rgb(100, 100, 95); */
 }
 .item-img{
+    margin: 1px;
     max-width: 100%;
     height: auto;
 }
