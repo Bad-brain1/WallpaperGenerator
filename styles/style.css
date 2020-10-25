@@ -26,15 +26,27 @@
     height: auto;
 }
 
+.content{
+    background-color: #e8eaec;
+    /* display: grid;
+    grid-template-columns: 0.15fr 1fr; */
+    display: flex;
+}
+
 /* фильтр */
+
+.searchbar__icon{
+    display: none;
+}
+
 .content__searchbar{
     display: flex;
     flex-direction: column;
     background-color: #232a34;
-    padding: 4px 0 4px ;
+    padding: 4px 16px 4px ;
     align-items: center;
     color: rgb(97, 97, 97);
-    justify-content: top;
+    /* justify-content: top; */
 }
 .searchbar__category{
     display: flex;
@@ -49,7 +61,7 @@
     width: 0;
     height: 0;
 }
-.checkbox-label{
+.checkbox__label{
     display: inline-block;
     text-align: center;
     min-width: 5em;
@@ -60,15 +72,15 @@
     text-shadow: 2px 2px 3px rgba(2, 1, 1, 0.75);
     margin:2px 0;
 }
-.checkbox:checked+label{
+.checkbox:checked+.checkbox__label{
     color: #FFF;
     background-color: rgb(101, 126, 87);
 }
-.resolution-text{
+.searchbar__text{
     color: #fff;
     font-size: 14pt;
 }
-.searchbar-text{
+.searchbar__header{
     color: #fff;
     font-size: 14pt;
     margin: 10px 0;
@@ -85,45 +97,56 @@
 .resolution-item:checked{
     background:  rgb(101, 126, 87);
 }
-.searchbar-button{
+.searchbar__button{
     min-width: 6em;
     height: 2em;
 }
 
 /* контент */
-.content{
-    background-color: #e8eaec;
-    display: grid;
-    grid-template-columns: 0.15fr 1fr;
-}
+
 .content__photos{
+    margin: auto;
     margin: 10px 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap:10px;
 }
-.photos__column{
-    /* background-color: rgb(100, 100, 95); */
-}
-.item-img{
-    margin: 1px;
+
+.item__img{
     max-width: 100%;
     height: auto;
 }
+
+
 @media(max-width:960px){
     .content__photos{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2,100vh);
+        grid-template-rows: repeat(2,auto);
         gap:3px;
     }
-    @media(max-width:700px){
+    @media(max-width:550px){
         .content__photos{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(3,100vh);
+            grid-template-rows: repeat(3,auto);
             gap:3px;
+        }
+        .header__text{
+            margin:-1px 0 0 -12px;
+            max-width: 3em;
+            font-size: 1.5em;
+        }
+        .content__searchbar{
+            display: none;
+        }
+        .searchbar__icon{
+            color: #fff;
+            display:block;
+            font-size: 25px;
+            text-decoration: none;
+            margin: 30px 0 0 -5px;
         }
     }
 }

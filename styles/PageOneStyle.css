@@ -48,6 +48,14 @@
     max-height: 100%;
 }
 
+
+@media(max-width:550px){
+    .header__text{
+        margin:-1px 0 0 -12px;
+        max-width: 3em;
+        font-size: 1.5em;
+    }
+}
 /*  */
 .footer{
     color: #fff;

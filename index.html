@@ -4,72 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free HD Wallpapers</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Staatliches&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/962325c708.js"></script>
 </head>
 <body class="body">
     <div class="container">
         <div class="header"> 
-            <img class="Header__logo" src="/img/logo.png" alt="logo" width="150" height="65">  
-            <h1>HD Wallpapers</h1>
+            <a href="#" class="searchbar__icon">
+                <i class="fa fa-bars " aria-hidden="true"></i>
+            </a>
+            <img class="Header__logo" src="img/logo.png" alt="logo" width="150" height="65">  
+            <h1 class="header__text">HD Wallpapers</h1>
         </div>
 
         <div class="content">
+            
             <form class="content__searchbar"> 
-        		<h3 class="searchbar-text">Filter</h3>
-	            <div class="searchbar__category">
+        		<h3 class="searchbar__header">Filter</h3>
+	            <div class="searchbar__category" id="category">
+                    <label for="category" class="searchbar__text"> category</label>
 	                <input type="checkbox" class="checkbox" name="general" value="general" id="search-general" checked>
-	                <label for="search-general" class="checkbox-label"> General</label>
+	                <label for="search-general" class="checkbox__label"> General</label>
 	                <input type="checkbox" class="checkbox" name="anime" value="anime" id="search-anime" checked>
-	                <label for="search-anime" class="checkbox-label"> Anime</label>
+	                <label for="search-anime" class="checkbox__label"> Anime</label>
 	                <input type="checkbox" class="checkbox" name="people" value="people" id="search-people" checked>
-	                <label for="search-people" class="checkbox-label"> People</label>
-	            </div>
-	            <div class="searchbar__category">
+	                <label for="search-people" class="checkbox__label"> People</label>
+                </div>
+                
+	            <div class="searchbar__category" id="type">
+                    <label for="type" class="searchbar__text"> Type</label>
 	                <input type="checkbox" class="checkbox" name="swf" value="swf" id="search-swf" checked>
-	                <label for="search-swf" class="checkbox-label"> SWF</label>
-	                <input type="checkbox" class="checkbox" name="sketchy" value="anime" id="search-sketchy" checked>
-	                <label for="search-sketchy" class="checkbox-label"> Sketchy</label>
+	                <label for="search-swf" class="checkbox__label"> SWF</label>
+	                <input type="checkbox" class="checkbox" name="sketchy" value="sketchy" id="search-sketchy" checked>
+	                <label for="search-sketchy" class="checkbox__label"> Sketchy</label>
                 </div>
-                <!-- возможно нужно поменять -->
-                <div class="searchbar__category">   
-                    <label for="resolution" class="resolution-text"> resolution</label>
-                    <select class="category__resolution" name="resolution" id="">
-                        <option class="resolution-item" value=""> ALL </option>
-                        <option class="resolution-item" value=""> HD </option>
-                        <option class="resolution-item" value=""> FullHD </option>
-                        <option class="resolution-item" value=""> 4K </option>
-                    </select>
+        
+                <div class="searchbar__category" id="resolution">
+                    <label for="resolution" class="searchbar__text"> Resolution</label>
+	                <input type="checkbox" class="checkbox" name="hd" value="hd" id="search-hd" checked>
+                    <label for="search-hd" class="checkbox__label"> HD</label>
+                    <input type="checkbox" class="checkbox" name="fullhd" value="fullhd" id="search-fullhd" checked>
+	                <label for="search-fullhd" class="checkbox__label"> FullHD</label>
+	                <input type="checkbox" class="checkbox" name="4k" value="4k" id="search-4k" checked>
+	                <label for="search-4k" class="checkbox__label"> 4k</label>
                 </div>
+
                 <div class="searchbar__category">
-                    <button class="searchbar-button" type="button" > search </button>
+                    <button class="searchbar__button" type="button" > search </button>
                 </div>
             </form>
             
             <div class="content__photos">    
                 <div class="photos__column">
                     <div class="column__item">
-                        <a href="/pages/page1.html"> 
-                            <img class="item-img" src="img/test.png" alt="testimg" width="auto" height="250">
-                            <img class="item-img" src="img/test.png" alt="testimg" width="auto" height="250">
-                            <img class="item-img" src="img/test.png" alt="testimg" width="auto" height="250">
+                        <a href="pages/page1.html"> 
+                            <img class="item__img" src="img/test.png" alt="testimg" width="auto" height="250">
                         </a>
+                        <img class="item__img" src="img/test1.jpg" alt="testimg" width="auto" height="250">
+                        <img class="item__img" src="img/test.png" alt="testimg" width="auto" height="250">
                     </div>
                 </div> 
                 <div class="photos__column">
                     <div class="photos__column">
                         <div class="column__item">
-                            <a href="/pages/page1.html"> 
-                                <img class="item-img" src="img/test1.jpg" alt="testimg" width="auto" height="250">
+                            <a href="pages/page1.html"> 
+                                <img class="item__img" src="img/test1.jpg" alt="testimg" width="auto" height="250">
                             </a>
                         </div>
                     </div> 
                 </div>
                 <div class="photos__column">
                     <div class="column__item">
-                        <a href="/pages/page1.html"> 
-                            <img class="item-img" src="img/test.png" alt="testimg" width="auto" height="250">
+                        <a href="pages/page1.html"> 
+                            <img class="item__img" src="img/test.png" alt="testimg" width="auto" height="250">
                         </a>
                     </div>
                 </div>
