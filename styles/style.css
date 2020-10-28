@@ -7,8 +7,9 @@
 }
 .container{
     display: grid;
-    grid-template-rows: 75px auto 200px;
+    grid-template-rows: 75px auto 70px;
 }
+
 /*  */
 .header{
     display: flex;
@@ -28,8 +29,6 @@
 
 .content{
     background-color: #e8eaec;
-    /* display: grid;
-    grid-template-columns: 0.15fr 1fr; */
     display: flex;
 }
 
@@ -38,13 +37,18 @@
 .searchbar__icon{
     display: none;
 }
+/* .icon__checkbox{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+} */
 
 .content__searchbar{
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #232a34;
     padding: 4px 16px 4px ;
-    align-items: center;
     color: rgb(97, 97, 97);
     /* justify-content: top; */
 }
@@ -75,6 +79,9 @@
 .checkbox:checked+.checkbox__label{
     color: #FFF;
     background-color: rgb(101, 126, 87);
+}
+.checkbox:focus-visible+.checkbox__label{
+    opacity: 0.5;
 }
 .searchbar__text{
     color: #fff;
@@ -107,49 +114,35 @@
 .content__photos{
     margin: auto;
     margin: 10px 20px;
+    gap:10px; 
+    grid-template-columns: repeat(auto-fill, minmax(var(--layout-grid-min-width, 300px), 1fr));
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap:10px;
+    align-content: baseline;
 }
-
 .item__img{
     max-width: 100%;
     height: auto;
 }
 
-
-@media(max-width:960px){
-    .content__photos{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2,auto);
-        gap:3px;
+@media(max-width:550px){
+    .header__text{
+        margin:-1px 0 0 -12px;
+        max-width: 3em;
+        font-size: 1.5em;
     }
-    @media(max-width:550px){
-        .content__photos{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(3,auto);
-            gap:3px;
-        }
-        .header__text{
-            margin:-1px 0 0 -12px;
-            max-width: 3em;
-            font-size: 1.5em;
-        }
-        .content__searchbar{
-            display: none;
-        }
-        .searchbar__icon{
-            color: #fff;
-            display:block;
-            font-size: 25px;
-            text-decoration: none;
-            margin: 30px 0 0 -5px;
-        }
+    .content__searchbar{
+        display: none;
+    }
+    .searchbar__icon{
+        color: #fff;
+        display:block;
+        font-size: 25px;
+        text-decoration: none;
+        margin: 30px 0 0 -5px;
+        cursor: pointer;
     }
 }
+
 
 /* футер */
 .footer{
