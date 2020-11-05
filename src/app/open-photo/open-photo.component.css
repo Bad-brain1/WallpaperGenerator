@@ -1,0 +1,26 @@
+.content__link{
+    color: #fff;
+    font-size: 20pt;
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    z-index: 1;
+}
+.content{
+    display: grid; 
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.content__img{
+    margin: 10px;
+    position: relative;
+}
+.img-items{
+    position: absolute;
+    left:2%;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 95%;
+    max-height: 100%;
+}

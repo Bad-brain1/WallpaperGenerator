@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearcbarComponent } from './searcbar/searcbar.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
+import { OpenPhotoComponent } from './open-photo/open-photo.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearcbarComponent,
-    MainHeaderComponent
+    MainHeaderComponent,
+    OpenPhotoComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,

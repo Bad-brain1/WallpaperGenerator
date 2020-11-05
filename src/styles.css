@@ -8,9 +8,11 @@
 }
 .container{
     display: grid;
-    grid-template-rows: 75px auto 70px;
+    grid-template-rows: 75px auto;
 }
-
+.test{
+    display: contents;
+}
 /*  */
 .header{
     display: flex;
@@ -85,6 +87,7 @@
     opacity: 0.5;
 }
 .searchbar__text{
+    margin: 0;
     color: #fff;
     font-size: 14pt;
 }
@@ -150,5 +153,5 @@
     color: #fff;
     background-color:#232a34;
     box-shadow: inset 0 0 0 1px rgba(31,31,31,.66), 0 0 10px rgba(0,0,0,.75), 0 0 10px rgba(0,0,0,.75);
-    padding: 10px;
+    padding: 20px 15px;
 }
