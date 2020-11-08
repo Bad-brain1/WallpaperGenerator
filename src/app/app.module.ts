@@ -8,6 +8,7 @@ import { MainHeaderComponent } from './main-header/main-header.component';
 import { OpenPhotoComponent } from './open-photo/open-photo.component';
 import { MainPageComponent } from './main-page/main-page.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

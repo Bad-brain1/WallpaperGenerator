@@ -3,27 +3,9 @@
     <app-searcbar class="content__searchbar"></app-searcbar>
   
     <div class="content__photos">
-        <a routerLink="/OpenPhoto"> 
-            <img class="item__img" src="../assets/images/im1.png" alt="testimg" min-width="300" height="250">
-        </a>
-        <a routerLink="/OpenPhoto"> 
-            <img class="item__img" src="../assets/images/im1.png" alt="testimg" min-width="300" height="250">
-        </a>
-        <a routerLink="/OpenPhoto"> 
-            <img class="item__img" src="../assets/images/im1.png" alt="testimg" min-width="300" height="250">
-        </a>
-        <a routerLink="/OpenPhoto"> 
-            <img class="item__img" src="../assets/images/im1.png" alt="testimg" min-width="300" height="250">
-        </a>
-        <a routerLink="/OpenPhoto"> 
-            <img class="item__img" src="../assets/images/im1.png" alt="testimg" min-width="300" height="250">
-        </a>
-        <a routerLink="/OpenPhoto"> 
-            <img class="item__img" src="../assets/images/im1.png" alt="testimg" min-width="300" height="250">
-        </a>
-        <a routerLink="/OpenPhoto"> 
-            <img class="item__img" src="../assets/images/im1.png" alt="testimg" min-width="300" height="250">
-        </a>
+        <a routerLink="/OpenPhoto" *ngFor="let img of image"  > 
+            <img class="item__img" [src]="img.url" alt="testimg" min-width="300" height="250">
+        </a> 
     </div>
 </div>
 <div class="footer">
