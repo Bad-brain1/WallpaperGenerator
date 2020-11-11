@@ -1,5 +1,5 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { IMAGES } from '../../../imgbase'
 import { Img } from './ImgInteface'
 
 @Component({
@@ -8,14 +8,16 @@ import { Img } from './ImgInteface'
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent implements OnInit {
+ 
+  public images:Img[]=[];
 
-  image = IMAGES;
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
+    this.http.get('assets/datebase.json').subscribe(
+      data => this.images=data["Img"]
+    );
   }
-  test(){
-    console.info(this.image);
-  }
+  
 }
 

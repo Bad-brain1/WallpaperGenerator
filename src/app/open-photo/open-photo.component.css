@@ -1,10 +1,12 @@
 .content__link{
-    color: #fff;
+    color: green;
     font-size: 20pt;
     position: absolute;
     top: 1%;
     left: 3%;
     z-index: 1;
+    border-radius: 0;
+    border: none;
 }
 .content{
     display: grid; 

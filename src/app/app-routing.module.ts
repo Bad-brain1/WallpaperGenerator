@@ -10,7 +10,7 @@ const routes: Routes = [
     component: MainPageComponent
   },
   {
-    path:'OpenPhoto',
+    path:'OpenPhoto/:url',
     component:OpenPhotoComponent
   },
   {

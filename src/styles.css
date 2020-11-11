@@ -40,11 +40,6 @@
 .searchbar__icon{
     display: none;
 }
-/* .icon__checkbox{
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-} */
 
 .content__searchbar{
     display: flex;
@@ -123,6 +118,7 @@
     display: grid;
     align-content: baseline;
 }
+
 .item__img{
     max-width: 100%;
     height: auto;

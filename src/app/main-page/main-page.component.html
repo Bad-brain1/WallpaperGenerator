@@ -3,8 +3,8 @@
     <app-searcbar class="content__searchbar"></app-searcbar>
   
     <div class="content__photos">
-        <a routerLink="/OpenPhoto" *ngFor="let img of image"  > 
-            <img class="item__img" [src]="img.url" alt="testimg" min-width="300" height="250">
+        <a [routerLink]="['/OpenPhoto', imgs.url]" *ngFor="let imgs of images"  > 
+            <img class="item__img" [src]="imgs.url" alt="testimg" min-width="300" height="250">
         </a> 
     </div>
 </div>
