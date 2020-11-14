@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Img } from './ImgInteface'
+import { Image } from './ImgInteface'
 
 @Component({
   selector: 'app-main-page',
@@ -8,16 +8,18 @@ import { Img } from './ImgInteface'
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent implements OnInit {
- 
-  public images:Img[]=[];
 
-  constructor(private http:HttpClient) { }
+  public images: Image[] = [];
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
     this.http.get('assets/datebase.json').subscribe(
-      data => this.images=data["Img"]
+      (data: { images: Image[] }) => {
+        this.images = data.images
+      }
     );
   }
-  
+
 }
 

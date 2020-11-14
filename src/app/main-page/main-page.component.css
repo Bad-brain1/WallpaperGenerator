@@ -1,0 +1,4 @@
+.content{
+    display: flex;
+    flex-shrink: 1 1 auto;
+}

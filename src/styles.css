@@ -34,7 +34,11 @@
     background-color: #e8eaec;
     display: flex;
 }
-
+app-main-page{
+    display: flex;
+    flex-direction: column;
+    /* flex-shrink: 1 1 auto ; */
+}
 /* фильтр */
 
 .searchbar__icon{
@@ -146,6 +150,7 @@
 
 /* футер */
 .footer{
+    flex: 1;
     color: #fff;
     background-color:#232a34;
     box-shadow: inset 0 0 0 1px rgba(31,31,31,.66), 0 0 10px rgba(0,0,0,.75), 0 0 10px rgba(0,0,0,.75);

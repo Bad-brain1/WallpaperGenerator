@@ -1,5 +1,4 @@
-
-export class Img{
-    id:number;
-    url:string;
+export interface Image {
+    id: number;
+    url: string;
 }

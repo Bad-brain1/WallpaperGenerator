@@ -1,8 +1,15 @@
+
+
 <div class="content">
     <div class="content__img">
-        <button type="button" class="content__link" onclick="">
+        <!-- <button type="button" class="content__link" (click)="save(url)">
             <i class="fa fa-download" aria-hidden="true"></i>
-        </button>
+        </button>         -->
+
+        <a class="content__link"  [href]="url" download>
+            <i class="fa fa-download" aria-hidden="true"></i>
+        </a>
+
         <img class="img-items" [src]="url" [alt]="" width="100%" height="auto">
     </div>
 </div>

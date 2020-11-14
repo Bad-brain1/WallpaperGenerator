@@ -6,19 +6,19 @@ import { OpenPhotoComponent } from './open-photo/open-photo.component';
 
 const routes: Routes = [
   {
-    path:'Main',
+    path: 'Main',
     component: MainPageComponent
   },
   {
-    path:'OpenPhoto/:url',
-    component:OpenPhotoComponent
+    path: 'OpenPhoto/:id',
+    component: OpenPhotoComponent
   },
   {
-    path:'',
-    redirectTo:'Main',
-    pathMatch:'full'
+    path: '',
+    redirectTo: 'Main',
+    pathMatch: 'full'
   }
-  
+
 ];
 
 @NgModule({
