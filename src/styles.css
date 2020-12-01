@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 .body{
     font-family: 'PT Serif', serif;
-    /* margin: 0; */
     display: grid;
     height: 100vh;
     font-size: 15px;
@@ -34,24 +33,29 @@
     background-color: #e8eaec;
     display: flex;
 }
-app-main-page{
-    display: flex;
-    flex-direction: column;
-    /* flex-shrink: 1 1 auto ; */
-}
+
 /* фильтр */
 
 .searchbar__icon{
     display: none;
 }
-
+.app-searcbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #232a34; */
+    padding: 4px 70px 4px ;
+    
+}
 .content__searchbar{
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #232a34;
     padding: 4px 16px 4px ;
     color: rgb(97, 97, 97);
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,.4), 1px 1px 0 rgba(127,127,127,.1);
     /* justify-content: top; */
 }
 .searchbar__category{
@@ -111,7 +115,17 @@ app-main-page{
     min-width: 6em;
     height: 2em;
 }
-
+.searchbar__up{
+    text-decoration: none;
+    color: #FFF;
+    width: 90px;
+}
+.searchbar__category--up{
+    text-align: center;
+}
+.searchbar__category--up:hover{
+    background:  rgb(101, 126, 87);
+}
 /* контент */
 
 .content__photos{
@@ -135,6 +149,9 @@ app-main-page{
         font-size: 1.5em;
     }
     .content__searchbar{
+        display: none;
+    }
+    .app-searcbar{
         display: none;
     }
     .searchbar__icon{
