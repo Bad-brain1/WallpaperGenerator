@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+// import { FormGroup } from '@angular/forms';
+// import { Image } from '../main-page/ImgInteface';
 
 @Component({
   selector: 'app-searcbar',
@@ -8,8 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class SearcbarComponent implements OnInit {
 
   constructor() { }
-
-  ngOnInit(): void {
+ 
+  ngOnInit(): void { 
   }
-
 }

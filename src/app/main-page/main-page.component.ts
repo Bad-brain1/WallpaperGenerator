@@ -1,14 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Image } from './ImgInteface'
+import { Image } from './ImgInteface';
+
 
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.css']
 })
-export class MainPageComponent implements OnInit {
 
+export class MainPageComponent implements OnInit {
+  searchStr:string;
   public images: Image[] = [];
 
   constructor(private http: HttpClient) { }
@@ -20,6 +22,5 @@ export class MainPageComponent implements OnInit {
       }
     );
   }
-
 }
 

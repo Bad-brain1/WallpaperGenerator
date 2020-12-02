@@ -1,15 +1,14 @@
-
+<input type="text" [(ngModel)]="searchStr" >
 <div class="content">
     <app-searcbar class="app-searcbar"></app-searcbar>
-  
+   
     <div class="content__photos">
-        <a [routerLink]="['/OpenPhoto', img.id]" *ngFor="let img of images"> 
+        <a [routerLink]="['/OpenPhoto', img.id]" *ngFor="let img of images | search:searchStr"> 
             <img class="item__img" [src]="img.url" alt="testimg" min-width="300" height="250">
         </a> 
     </div>
+
 </div>
 <!-- <div class="footer">
     create by 'Radynov Alexandr'
 </div> -->
-    
-

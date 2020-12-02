@@ -9,6 +9,8 @@ import { OpenPhotoComponent } from './open-photo/open-photo.component';
 import { MainPageComponent } from './main-page/main-page.component';
 
 import { HttpClientModule }   from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
@@ -16,12 +18,14 @@ import { HttpClientModule }   from '@angular/common/http';
     SearcbarComponent,
     MainHeaderComponent,
     OpenPhotoComponent,
-    MainPageComponent
+    MainPageComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
