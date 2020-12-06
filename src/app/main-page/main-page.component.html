@@ -1,9 +1,13 @@
-<input type="text" [(ngModel)]="searchStr" >
+<!-- <input type="text" [formControl]="form.get('searchText')"> -->
+
 <div class="content">
-    <app-searcbar class="app-searcbar"></app-searcbar>
+    <app-searcbar 
+        class="app-searcbar"
+        [categories]="categories"
+        [selectedCategories]="form.get('categories')"></app-searcbar>
    
     <div class="content__photos">
-        <a [routerLink]="['/OpenPhoto', img.id]" *ngFor="let img of images | search:searchStr"> 
+        <a [routerLink]="['/OpenPhoto', img.id]" *ngFor="let img of filteredImages"> 
             <img class="item__img" [src]="img.url" alt="testimg" min-width="300" height="250">
         </a> 
     </div>

@@ -29,7 +29,8 @@ export class OpenPhotoComponent implements OnInit {
       }
     );
   }
-
+  
+  
   // save(url: string, img: HTMLImageElement) {
   //   downloadjs(new Blob(), 'my-image.png', 'image/png');
   // }

@@ -42,6 +42,10 @@
 .searchbar__icon{
     display: none;
 }
+.checkbox__icon{
+    width: 0;
+    height: 0;
+}
 .app-searcbar{
     display: flex;
     flex-direction: column;
@@ -57,7 +61,12 @@
     background-color: #232a34;
     padding: 4px 16px 4px ;
     color: rgb(97, 97, 97);
-    /* justify-content: top; */
+    border-radius: 10px;
+}
+.checkbox__icon:checked+.app-searcbar{
+    background-color: blue;
+    position: absolute;
+    display: none;
 }
 .searchbar__category{
     display: flex;
@@ -67,29 +76,23 @@
     box-shadow: inset 1px 1px 1px rgba(0,0,0,.4), 1px 1px 0 rgba(127,127,127,.1);
     margin: 5px 0.25em;
     align-items: center;
+    border-radius: 10px;
 }
-.checkbox{
-    width: 0;
-    height: 0;
-}
-.checkbox__label{
-    display: inline-block;
-    text-align: center;
-    min-width: 5em;
-    padding: .5em;
-    cursor: pointer;
-    border-radius: 2px;
+/* todo */
+.bt{
+    border-width: 0;
+    border-radius: 0;
+    width: 90px;
+    height: 30px;
+    margin: 3px 0;
     background-color:rgba(20, 18, 18, 0.2);
-    text-shadow: 2px 2px 3px rgba(2, 1, 1, 0.75);
-    margin:2px 0;
+    border-radius: 10px;
 }
-.checkbox:checked+.checkbox__label{
+.active{
+    background-color: rgb(77, 158, 74);
     color: #FFF;
-    background-color: rgb(101, 126, 87);
 }
-.checkbox:focus-visible+.checkbox__label{
-    opacity: 0.5;
-}
+
 .searchbar__text{
     margin: 0;
     color: #fff;
@@ -100,30 +103,17 @@
     font-size: 14pt;
     margin: 10px 0;
 }
-.category__resolution{
-    min-width: 6em;
-    background:rgb(101, 126, 87);
-    color: #fff;
-}
-.resolution-item{
-    background-color: rgb(30, 34, 41);
-    /* background: #fff; */
-}
-.resolution-item:checked{
-    background:  rgb(101, 126, 87);
-}
-.searchbar__button{
-    min-width: 6em;
-    height: 2em;
-}
+
 .searchbar__category--up{
     text-align: center;
 }
 .category__up{
-    text-decoration: none;
-    color: #FFF;
+    border-width: 0;
+    border-radius: 0;
     width: 90px;
-    height: 20px;
+    height: 30px;
+    margin: 3px 0;
+    border-radius: 10px;
 }
 .category__up:hover{
     background-color:rgb(101, 126, 87);
@@ -153,6 +143,9 @@
     .content__searchbar{
         display: none;
     }
+    .app-searcbar{
+        display: none;
+    }
     .searchbar__icon{
         color: #fff;
         display:block;
@@ -161,14 +154,15 @@
         margin: 30px 0 0 -5px;
         cursor: pointer;
     }
+    .checkbox__icon:checked+.searchbar__icon{
+        color: brown;
+    }
+    .checkbox__icon:checked+.app-searcbar{
+        position: absolute;
+        display: flex;
+    }
 }
 
 
 /* футер */
-.footer{
-    flex: 1;
-    color: #fff;
-    background-color:#232a34;
-    box-shadow: inset 0 0 0 1px rgba(31,31,31,.66), 0 0 10px rgba(0,0,0,.75), 0 0 10px rgba(0,0,0,.75);
-    padding: 20px 15px;
-}
+

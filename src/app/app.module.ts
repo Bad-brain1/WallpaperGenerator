@@ -9,8 +9,8 @@ import { OpenPhotoComponent } from './open-photo/open-photo.component';
 import { MainPageComponent } from './main-page/main-page.component';
 
 import { HttpClientModule }   from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 import { SearchPipe } from './search.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { SearchPipe } from './search.pipe';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
