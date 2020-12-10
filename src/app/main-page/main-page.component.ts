@@ -15,24 +15,7 @@ export class MainPageComponent implements OnInit {
   public filteredImages: Image[] = [];
   public categories: Icategory[] = category;
 
-  // public categories = [
-  //   {
-  //     id: 1,
-  //     title: 'Auto',
-  //     value: 'auto'
-  //   },
-  //   {
-  //     id: 2,
-  //     title: 'City',
-  //     value: 'city'
-  //   },
-  //   {
-  //     id:3,
-  //     title:'People',
-  //     value:'people'
-  //   }
-  // ];
-
+  
   public form = new FormGroup({
     categories: new FormControl(['auto', 'city', 'people', 'nature', 'game', 'space']), // new FormArray([new FormControl('auto'), new FormControl('city')])
   });
@@ -44,18 +27,14 @@ export class MainPageComponent implements OnInit {
       (data: { images: Image[] }) => {
         this.images = data.images;
         this.filteredImages = this.images;
-        // this.selectedCategories(this.categories);
       }
     );
 
     this.form.valueChanges.subscribe(
       (formValues) => {
-        // console.info('FORM CHANGED');
-        // formValues.categories // ['city]
-        // formValues.searchText
         this.filteredImages = this.images
           .filter((image) => {
-            return formValues.categories.includes(image.category) // ['city'] image.category -> true
+            return formValues.categories.includes(image.category)
           })
       }
     )

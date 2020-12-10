@@ -5,7 +5,7 @@
 
         <div *ngFor="let category of categories">
             <button type="button"
-            class="bt"
+            class="searchbar__item"
              [class.active]="selectedCategories.value.includes(category.value)"
              (click)="prepareSelectedCategories(category.value)">
                 {{category.title}}

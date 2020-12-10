@@ -9,7 +9,7 @@ import { OpenPhotoComponent } from './open-photo/open-photo.component';
 import { MainPageComponent } from './main-page/main-page.component';
 
 import { HttpClientModule }   from '@angular/common/http';
-import { SearchPipe } from './search.pipe';
+
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -18,8 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     SearcbarComponent,
     MainHeaderComponent,
     OpenPhotoComponent,
-    MainPageComponent,
-    SearchPipe
+    MainPageComponent
   ],
   imports: [
     BrowserModule,

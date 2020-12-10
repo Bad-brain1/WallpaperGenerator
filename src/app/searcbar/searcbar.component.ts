@@ -17,8 +17,8 @@ export class SearcbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  prepareSelectedCategories(categoryValue) { // 'auto'
-    let selected = this.selectedCategories.value;  // ['auto, 'city']
+  prepareSelectedCategories(categoryValue) { 
+    let selected = this.selectedCategories.value;  
 
     if (selected.includes(categoryValue)) {
       selected = selected.filter((c) => c !== categoryValue)
@@ -26,7 +26,7 @@ export class SearcbarComponent implements OnInit {
       selected.push(categoryValue);
     }
 
-    this.selectedCategories.patchValue(selected); // selected  = ['city]
+    this.selectedCategories.patchValue(selected); 
   }
 
   toTop() {
