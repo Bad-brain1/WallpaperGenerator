@@ -1,7 +1,7 @@
 export interface Icategory {
-    id: number,
-    title: string,
-    value: string
+    id: number;
+    title: string;
+    value: string;
 }
 
 export let category = [
@@ -26,13 +26,13 @@ export let category = [
         value: 'nature'
     },
     {
-        id:5,
-        title:'Game',
-        value:'game'
+        id: 5,
+        title: 'Game',
+        value: 'game'
     },
     {
-        id:5,
-        title:'Space',
-        value:'space'
+        id: 6,
+        title: 'Space',
+        value: 'space'
     }
 ];
