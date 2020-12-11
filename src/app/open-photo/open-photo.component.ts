@@ -15,18 +15,17 @@ export class OpenPhotoComponent implements OnInit {
 
   constructor(
     private http: HttpClient,
-    private _route: ActivatedRoute
+    private route: ActivatedRoute
   ) { }
 
 
   ngOnInit(): void {
-    const id: number = +this._route.snapshot.paramMap.get('id');
+    const id: number = +this.route.snapshot.paramMap.get('id');
 
     this.http.get('assets/datebase.json').subscribe(
       (data: { images: Image[] }) => {
-        this.url = data.images.find((image: Image) => image.id === id).url
+        this.url = data.images.find((image: Image) => image.id === id).url;
       }
     );
-    
   }
 }

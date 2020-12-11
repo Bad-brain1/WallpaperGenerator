@@ -1,18 +1,11 @@
-<!-- <input type="text" [formControl]="form.get('searchText')"> -->
-
 <div class="content">
-    <app-searcbar 
-        class="app-searcbar"
-        [categories]="categories"
-        [selectedCategories]="form.get('categories')"></app-searcbar>
-   
+    <app-searchbar class="app-searchbar" [categories]="categories" [selectedCategories]="form.get('categories')">
+    </app-searchbar>
+
     <div class="content__photos">
-        <a [routerLink]="['/OpenPhoto', img.id]" *ngFor="let img of filteredImages"> 
+        <a [routerLink]="['/OpenPhoto', img.id]" *ngFor="let img of filteredImages">
             <img class="item__img" [src]="img.url" alt="testimg" min-width="300" height="250">
-        </a> 
+        </a>
     </div>
 
 </div>
-<!-- <div class="footer">
-    create by 'Radynov Alexandr'
-</div> -->

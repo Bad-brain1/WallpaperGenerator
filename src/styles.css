@@ -45,7 +45,7 @@
     width: 0;
     height: 0;
 }
-.app-searcbar{
+.app-searchbar{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,7 +61,7 @@
     color: rgb(97, 97, 97);
     border-radius: 10px;
 }
-.checkbox__icon:checked+.app-searcbar{
+.checkbox__icon:checked+.app-searchbar{
     background-color: blue;
     position: absolute;
     display: none;
@@ -141,7 +141,7 @@
     .content__searchbar{
         display: none;
     }
-    .app-searcbar{
+    .app-searchbar{
         display: none;
     }
     .searchbar__icon{
@@ -155,7 +155,7 @@
     .checkbox__icon:checked+.searchbar__icon{
         color: brown;
     }
-    .checkbox__icon:checked+.app-searcbar{
+    .checkbox__icon:checked+.app-searchbar{
         position: absolute;
         display: flex;
     }
